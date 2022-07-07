@@ -56,11 +56,11 @@ This endpoint should be used when a customer provides an email address with the 
 
 Your data payload must include the following:
 
-- Email*
-- Customer ID – This is a unique ID that your app assigns each user.
-- First name
-- Last name
-- Birthday
+- `email`*
+- `customer_id` – This is a unique ID that your app assigns each user.
+- `first_name`
+- `last_name`
+- `birthday` - This is the customer's birthday in the format `YYYY-MM-DD`.
 
 \* Denotes a mandatory field
 
@@ -73,16 +73,16 @@ This endpoint should be used after a user abandons a shopping cart without final
 
 Your data payload must include the following:
 
-- Email*
-- Customer ID – This is a unique ID that your app assigns each customer.
-- First name
-- Last name
-- Cart URL* – This is an URL that can regenerate the shopping cart for the customer. 
-- Products* – An array of the products left in the cart. Each product item must include the following:
-    - EAN*
-    - Name*
-    - URL*
-    - Thumbnail URL*
+- `email`*
+- `customer_id` – This is a unique ID that your app assigns each customer.
+- `first_name`
+- `last_name`
+- `cart_url`* – This is an URL that can regenerate the shopping cart for the customer. 
+- `products`* – An array of the products left in the cart. Each product item must include the following:
+    - `ean`*
+    - `name`*
+    - `url`*
+    - `thumbnail_url`*
     
 \* Denotes a mandatory field
 
@@ -95,17 +95,17 @@ This endpoint should be used after a customer successfully places an order.
 
 Your data payload must include the following:
 
-- Email*
-- Customer ID – This is a unique ID that your app assigns each customer.
-- First name
-- Last name
-- Order ID*
-- Order date
-- Products* – An array of the products left in the cart. Each product item must include the following:
-    - EAN*
-    - Name*
-    - URL*
-    - Thumbnail URL*
+- `email`*
+- `customer_id` – This is a unique ID that your app assigns each customer.
+- `first_name`
+- `last_name`
+- `order_id`*
+- `order_date`
+- `products`* – An array of the products left in the cart. Each product item must include the following:
+    - `ean`*
+    - `name`*
+    - `url`*
+    - `thumbnail_url`*
     
 \* Denotes a mandatory field
 
@@ -118,7 +118,7 @@ This endpoint should be used after an order is cancelled.
 
 Your data payload must include the following:
 
-- Order ID*
+- `order_id`*
 
 \* Denotes a mandatory field
 
@@ -132,14 +132,14 @@ This endpoint should be used when a product comes back in stock and a customer h
 
 Your data payload must include the following:
 
-- Email*
-- Customer ID – This is a unique ID that your app assigns each customer.
-- First name
-- Last name
-- Products* – An array of the products left in the cart. Each product item must include the following:
-    - EAN*
-    - Name*
-    - URL*
-    - Thumbnail URL*
+- `email`*
+- `customer_id` – This is a unique ID that your app assigns each customer.
+- `first_name`
+- `last_name`
+- `products`* – An array of the products left in the cart. Each product item must include the following:
+    - `ean`*
+    - `name`*
+    - `url`*
+    - `thumbnail_url`*
 
 \* Denotes a mandatory field
