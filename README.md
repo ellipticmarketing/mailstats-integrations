@@ -17,6 +17,7 @@ This guide covers the process of integrating Mailstats with an external applicat
   - [API Payload Requirements](#api-payload-requirements)
   - [API Responses and Errors](#api-responses-and-errors)
   - [API Endpoints](#api-endpoints)
+      - [Subscribers](#subscribers)] 
 
 ## Webhooks
 
@@ -226,3 +227,4 @@ For example:
         "prev_cursor": null
     }
 }
+```
