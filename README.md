@@ -161,10 +161,10 @@ Your app can request data from Mailstats via the API. You can hit different API 
 
 #### Getting your URL schema
 The basic schema for each endpoint looks like the following:
-`https://mailstats.ellipticmarketing.com/api/requests/{app_name}/{model}`
+`https://mailstats.ellipticmarketing.com/api/resources/{app_name}/{model}`
 
 For example:
-`https://mailstats.ellipticmarketing.com/api/requests/diorlatina/subscribers`
+`https://mailstats.ellipticmarketing.com/api/resources/diorlatina/subscribers`
 
 ### API Payload Requirements
 
@@ -193,7 +193,7 @@ For example:
 - `to` – The date to which to return subscribers based on last update.  Must be in the format `YYYY-MM-DD` or other [format compatible](https://www.php.net/manual/en/datetime.formats.php) with PHP's `strtotime` function .
 - `filter` – A filter to apply to the list of subscribers. Possible values are `all`, `subscribed`, `unsubscribed`.
 
-**Example Request:** `https://mailstats.ellipticmarketing.com/api/requests/diorlatina/subscribers?from=2020-01-01&to=2020-01-31`
+**Example Request:** `https://mailstats.ellipticmarketing.com/api/resources/diorlatina/subscribers?from=2020-01-01&to=2020-01-31`
 **Example Response:**
 
 ```
@@ -217,10 +217,10 @@ For example:
         "first": null,
         "last": null,
         "prev": null,
-        "next": "http://mailstats.ellipticmarketing.com/api/requests/diorlatina/subscribers?cursor=eyJ1cGRhdGVkX2F0IjoiMjAyMS0wNy0wOSAxNzo0MzozNiIsIl9wb2ludHNUb05leHRJdGVtcyI6dHJ1ZX9"
+        "next": "http://mailstats.ellipticmarketing.com/api/resources/diorlatina/subscribers?cursor=eyJ1cGRhdGVkX2F0IjoiMjAyMS0wNy0wOSAxNzo0MzozNiIsIl9wb2ludHNUb05leHRJdGVtcyI6dHJ1ZX9"
     },
     "meta": {
-        "path": "http://mailstats.ellipticmarketing.com/api/requests/diorlatina/subscribers",
+        "path": "http://mailstats.ellipticmarketing.com/api/resources/diorlatina/subscribers",
         "per_page": 25,
         "next_cursor": "eyJ1cGRhdGVkX2F0IjoiMjAyMS0wNy0wOSAxNzo0MzozNiIsIl9wb2ludHNUb05leHRJdGVtcyI6dHJ1ZX9",
         "prev_cursor": null
