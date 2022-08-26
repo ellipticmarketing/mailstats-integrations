@@ -91,7 +91,7 @@ Your data payload must include the following:
 - `cart_time` - Time in [ISO 8601](https://www.w3.org/TR/NOTE-datetime) format (e.g., 2019-02-01T03:45:27+04:00).
 - `cart_url`* – This is an URL that can regenerate the shopping cart for the customer. 
 - `products`* – An array of the products left in the cart. Each product item must include the following:
-    - `ean`*
+    - `reference`*
     - `name`*
     - `url`*
     - `thumbnail_url`*
@@ -114,7 +114,7 @@ Your data payload must include the following:
 - `order_id`*
 - `order_time` - Time in [ISO 8601](https://www.w3.org/TR/NOTE-datetime) format (e.g., 2019-02-01T03:45:27+04:00).
 - `products`* – An array of the products left in the cart. Each product item must include the following:
-    - `ean`*
+    - `reference`*
     - `name`*
     - `url`*
     - `thumbnail_url`*
@@ -149,7 +149,7 @@ Your data payload must include the following:
 - `first_name`
 - `last_name`
 - `products`* – An array of the products left in the cart. Each product item must include the following:
-    - `ean`*
+    - `reference`*
     - `name`*
     - `url`*
     - `thumbnail_url`*
