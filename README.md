@@ -17,7 +17,7 @@ This guide covers the process of integrating Mailstats with an external applicat
   - [API Payload Requirements](#api-payload-requirements)
   - [API Responses and Errors](#api-responses-and-errors)
   - [API Endpoints](#api-endpoints)
-      - [Subscribers](#subscribers)] 
+      - [Subscribers](#subscribers)
 
 ## Webhooks
 
@@ -192,11 +192,14 @@ For example:
 **Description:** Returns a list of all subscribers.
 
 **Query parameters:**
-- `from` – The date from which to return subscribers based on last update. Must be in the format `YYYY-MM-DD` or other [format compatible](https://www.php.net/manual/en/datetime.formats.php) with PHP's `strtotime` function .
-- `to` – The date to which to return subscribers based on last update.  Must be in the format `YYYY-MM-DD` or other [format compatible](https://www.php.net/manual/en/datetime.formats.php) with PHP's `strtotime` function .
-- `filter` – A filter to apply to the list of subscribers. Possible values are `all`, `subscribed`, `unsubscribed`.
+- `from` – The date from which to return subscribers based on last update. Must be in the format `YYYY-MM-DD` or other [format compatible](https://www.php.net/manual/en/datetime.formats.php) with PHP's `strtotime` function.
+- `to` – The date to which to return subscribers based on last update.  Must be in the format `YYYY-MM-DD` or other [format compatible](https://www.php.net/manual/en/datetime.formats.php) with PHP's `strtotime` function.
+- `status` – Includes records matching subscription status of `subscribed`, or `unsubscribed`.
+- `source` – Includes records matching the given source.
+- `exclude_source` – Excludes records matching the given source.
+- `limit` – Deprecated. Use `status` instead.
 
-**Example Request:** `https://mailstats.ellipticmarketing.com/api/resources/diorlatina/subscribers?from=2020-01-01&to=2020-01-31`
+**Example Request:** `https://mailstats.ellipticmarketing.com/api/resources/diorlatina/subscribers?from=2020-01-01&to=2020-01-31&exclude_source=vtex`
 **Example Response:**
 
 ```
