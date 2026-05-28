@@ -207,17 +207,40 @@ For example:
     "data": [
         {
             "email": "example@example.com",
+            "first_name": "Jane",
+            "last_name": "Doe",
             "unsubscribed_at": "2021-07-20T16:02:24.000000Z",
+            "phone_unsubscribed_at": null,
+            "postal_mail_unsubscribed_at": null,
+            "sms_unsubscribed_at": "2021-07-21T10:15:00.000000Z",
+            "whatsapp_unsubscribed_at": null,
+            "manual_unsubscribe": false,
+            "country": "Mexico",
+            "retailer": "El Palacio de Hierro",
+            "point_of_sale": "Satelite",
+            "telephone": "5551234567",
+            "cell_phone": "5559876543",
             "created_at": "2020-01-01T01:03:13.000000Z",
             "updated_at": "2020-01-01T16:02:24.000000Z"
         },
-        ...
         {
             "email": "example2@example.com",
+            "first_name": "John",
+            "last_name": "Smith",
             "unsubscribed_at": null,
+            "phone_unsubscribed_at": null,
+            "postal_mail_unsubscribed_at": "2021-07-25T09:30:00.000000Z",
+            "sms_unsubscribed_at": null,
+            "whatsapp_unsubscribed_at": "2021-07-26T12:00:00.000000Z",
+            "manual_unsubscribe": false,
+            "country": "Argentina",
+            "retailer": "Dior",
+            "point_of_sale": "Dior.com",
+            "telephone": null,
+            "cell_phone": "5491112345678",
             "created_at": "2020-01-03T08:00:00.000000Z",
             "updated_at": "2020-01-03T08:14:55.000000Z"
-        },
+        }
     ],
     "links": {
         "first": null,
