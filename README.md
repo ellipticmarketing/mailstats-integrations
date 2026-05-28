@@ -207,6 +207,8 @@ For example:
     "data": [
         {
             "email": "example@example.com",
+            "diorlatina_customer_id": "326628",
+            "diorlatina_customer_master_id": "900001",
             "first_name": "Jane",
             "last_name": "Doe",
             "unsubscribed_at": "2021-07-20T16:02:24.000000Z",
@@ -225,6 +227,8 @@ For example:
         },
         {
             "email": "example2@example.com",
+            "diorlatina_customer_id": "326629",
+            "diorlatina_customer_master_id": "900002",
             "first_name": "John",
             "last_name": "Smith",
             "unsubscribed_at": null,
